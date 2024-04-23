@@ -1,23 +1,22 @@
-cmake_minimum_required(VERSION 3.0.2)
-
+cmake_minimum_required(VERSION 3.8)
 project(fanuc_lrmate200id_support)
 
-find_package(catkin REQUIRED)
-
-catkin_package()
-
-if (CATKIN_ENABLE_TESTING)
-  find_package(roslaunch REQUIRED)
-  roslaunch_add_file_check(tests/roslaunch_test_200id.xml)
-  roslaunch_add_file_check(tests/roslaunch_test_200id4s.xml)
-  roslaunch_add_file_check(tests/roslaunch_test_200id4sc.xml)
-  roslaunch_add_file_check(tests/roslaunch_test_200id4sh.xml)
-  roslaunch_add_file_check(tests/roslaunch_test_200id7h.xml)
-  roslaunch_add_file_check(tests/roslaunch_test_200id7l.xml)
-  roslaunch_add_file_check(tests/roslaunch_test_200id7lc.xml)
+if(CMAKE_CXX_COMPILER_ID MATCHES "(GNU|Clang)")
+  add_compile_options(-Wall -Wextra -Werror=conversion -Werror=unused-but-set-variable -Werror=return-type -Werror=shadow)
 endif()
 
-install(DIRECTORY config launch meshes urdf
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+# find dependencies
+find_package(ament_cmake REQUIRED)
+# uncomment the following section in order to fill in
+# further dependencies manually.
+# find_package(<dependency> REQUIRED)
 
-install(FILES readme.md DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+install(
+  DIRECTORY config launch meshes rviz urdf
+  DESTINATION share/${PROJECT_NAME}
+)
+
+if(BUILD_TESTING)
+endif()
+
+ament_package()

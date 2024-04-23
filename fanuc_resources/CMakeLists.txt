@@ -1,12 +1,19 @@
-cmake_minimum_required(VERSION 3.0.2)
-
+cmake_minimum_required(VERSION 3.8)
 project(fanuc_resources)
 
-find_package(catkin REQUIRED)
+if(CMAKE_CXX_COMPILER_ID MATCHES "(GNU|Clang)")
+  add_compile_options(-Wall -Wextra -Werror=conversion -Werror=unused-but-set-variable -Werror=return-type -Werror=shadow)
+endif()
 
-catkin_package()
+# find dependencies
+find_package(ament_cmake REQUIRED)
+# uncomment the following section in order to fill in
+# further dependencies manually.
+# find_package(<dependency> REQUIRED)
 
-install(DIRECTORY urdf
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+install(
+  DIRECTORY urdf
+  DESTINATION share/${PROJECT_NAME}
+)
 
-install(FILES readme.md DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+ament_package()
