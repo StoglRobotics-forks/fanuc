@@ -8,7 +8,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/base_link.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/base_link.dae"/>
         </geometry>
         <xacro:material_fanuc_gray28 />
       </visual>
@@ -23,7 +23,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_1.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_1.dae"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
@@ -38,7 +38,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/visual/link_2.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/visual/link_2.dae"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
@@ -53,7 +53,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_3.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_3.dae"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
@@ -68,7 +68,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/visual/link_4.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id7l/visual/link_4.dae"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
@@ -83,7 +83,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_5.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_5.dae"/>
         </geometry>
         <xacro:material_fanuc_yellow />
       </visual>
@@ -98,7 +98,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_6.stl"/>
+          <mesh filename="package://fanuc_lrmate200id_support/meshes/lrmate200id/visual/link_6.dae"/>
         </geometry>
         <xacro:material_fanuc_black />
       </visual>
